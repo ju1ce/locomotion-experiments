@@ -2,6 +2,8 @@
 
 This repository will contain code for my experiments with diffrent types of locomotion for VR. As I feel like moving using the joystick is not immersive and can be annoying, I though I would try out some systems where movement could be done without any input from hands.
 
+For any questions, message me on the ApriltagTrackers discord: https://discord.com/invite/CSnp8AB3yy
+
 ## 1. Hip oriented movement
 
 The first one is simple hip oriented movement, where movement is still done with a joystick, but rather than being in the direction of your headset, it is in direction of your hip. This can be accesed here: https://github.com/ju1ce/Simple-OpenVR-Bridge-Driver/tree/hip-locomotion. You can use the newer driver from either this repository, or the ApriltagTrackers repository as well.
@@ -9,6 +11,13 @@ The first one is simple hip oriented movement, where movement is still done with
 ## 2. Lean-to-move
 
 Second experiment was: lean in the direction you want to move, turn your hip into the direction you want to turn. This one actualy works fairly well, but still has significant drawbacks which may not make it very useful.
+
+### How to use:
+
+Download lean to move from the releases tab and extract it. Install the driver from driver_files. Have some sort of a waist tracker connected, such as a vive tracker, owotrack or apriltagtracker. Make sure it is set to waist! You will also have to set the bindings for any game you want to play - in the bindings menu, change the bindings for the hip_locomotion controller. Movement will usualy already be bound correctly, but you will have to bind trackpad to rotation.
+
+When everything is running, open and close the steamvr dashboard to recalibrate current hmd position as center and hip tracker rotation as center rotation.
+Use the pop up window to set the movement thresholds.
 
 ### Problems:
 
